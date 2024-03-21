@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+
 import Home from './assets/components/Home/Home';
 import About from './assets/components/About/About';
 import Projects from './assets/components/Projects/Projects';
+import Contact from './assets/components/Contact/Contact';
+
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -18,6 +23,8 @@ function App() {
         return <About />;
       case 'projects':
         return <Projects />;
+      case 'contact':
+        return <Contact />;
       default:
         return <Home />;
     }
@@ -32,6 +39,7 @@ function App() {
             <Nav.Link onClick={() => setPage('home')}>Home</Nav.Link>
             <Nav.Link onClick={() => setPage('about')}>About Me</Nav.Link>
             <Nav.Link onClick={() => setPage('projects')}>Projects</Nav.Link>
+            <Nav.Link onClick={() => setPage('contact')}>Contact Me!</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
