@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import Home from './assets/components/Home/Home';
+import About from './assets/components/About/About';
+import Projects from './assets/components/Projects/Projects';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [page, setPage] = useState('home');
+
+  const renderPage = () => {
+    switch (page) {
+      case 'home':
+        return <Home />;
+      case 'about':
+        return <About />;
+      case 'projects':
+        return <Projects />;
+      default:
+        return <Home />;
+    }
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand>Danny Saravia</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link onClick={() => setPage('home')}>Home</Nav.Link>
+            <Nav.Link onClick={() => setPage('about')}>About Me</Nav.Link>
+            <Nav.Link onClick={() => setPage('projects')}>Projects</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      {renderPage()}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
