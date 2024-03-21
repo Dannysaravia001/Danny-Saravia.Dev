@@ -7,16 +7,37 @@ body {
     padding: 0;
 }
 
+.h1,
+.h2,
+p {
+    margin-top: 20px; /* Add spacing at the top of headings and paragraphs */
+    margin-bottom: 20px; /* Add spacing at the bottom of headings and paragraphs */
+}
+
 .h1 {
     font-size: 2em;
     margin: 0;
     padding-top: 20px;
+    color: blue; /* Change text color to blue */
+}
+
+.h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: 20px;
+    color: blue; /* Change text color to blue */
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+    padding-top: 20px;
+    color: blueviolet; /* Change text color to green */
 }
 
 .header {
     background-color: #333;
     color: #fff;
-    
 }
 
 .header h1 {
@@ -28,9 +49,29 @@ body {
     padding: 20px;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+footer {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer h3 {
+    font-size: 23px;
+    margin-top: 20px; /* Add spacing at the top of the footer heading */
+}
+
+.social-media-icon {
+    width: 50px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 20px; /* Add spacing at the top of social media icons */
+    margin-bottom: 20px; /* Add spacing at the bottom of social media icons */
+}
+
+.social-media-icon:hover {
+    transform: scale(1.1);
 }

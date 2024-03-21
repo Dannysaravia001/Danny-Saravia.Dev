@@ -6,7 +6,7 @@ export default function Type() {
             options={{
                 strings: [
                     'Web Developer',
-                    'self Motivated',
+                    'Self Motivated',
                     'Avid learner',
                 ],
                 autoStart: true,
