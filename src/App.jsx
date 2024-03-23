@@ -9,6 +9,7 @@ import About from './assets/components/About/About';
 import Projects from './assets/components/Projects/Projects';
 import Contact from './assets/components/Contact/Contact';
 
+
 function App() {
   const [page, setPage] = useState('home');
 
@@ -42,8 +43,8 @@ function App() {
       </Navbar>
       {renderPage()}
       <footer>
-      <p>© 2024 Danny Saravia</p>
-        <div className="social-media">
+      <p style={{color:'#95d3e9', fontSize:'15px'}}>© 2024 Danny Saravia</p>
+        <div className="social-media" style={{color:'#efd604', fontSize:'15px'}}>
           <a href="https://www.instagram.com/saraviadanny1223" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="social-media-icon" />
           </a>
