@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
-
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './assets/components/Home/Home';
 import About from './assets/components/About/About';
 import Projects from './assets/components/Projects/Projects';
 import Contact from './assets/components/Contact/Contact';
-
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [page, setPage] = useState('home');
@@ -44,6 +41,20 @@ function App() {
         </Container>
       </Navbar>
       {renderPage()}
+      <footer>
+      <p>© 2024 Danny Saravia</p>
+        <div className="social-media">
+          <a href="https://www.instagram.com/saraviadanny1223" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="social-media-icon" />
+          </a>
+          <a href="https://github.com/Dannysaravia001" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="social-media-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/danny-saravia-0a4298300/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="social-media-icon" />
+          </a>
+        </div>
+      </footer>
     </>
   );
 }

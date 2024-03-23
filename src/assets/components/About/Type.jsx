@@ -5,15 +5,13 @@ export default function Type() {
         <Typewriter 
             options={{
                 strings: [
-                    'A Web Developer',
-                    'Self Motivated',
-                    'An Avid learner',
+                    'About Me ...',
                 ],
                 autoStart: true,
                 loop: true,
-                deleteSpeed: 50
+                deleteSpeed: 50,
+                typeSpeed: 200// Adjust this value to make it type more slowly
             }}
         />
     );
 }
-
