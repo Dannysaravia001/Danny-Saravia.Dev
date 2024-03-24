@@ -30,6 +30,7 @@ function App() {
 
   return (
     <>
+      
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>Danny Saravia</Navbar.Brand>

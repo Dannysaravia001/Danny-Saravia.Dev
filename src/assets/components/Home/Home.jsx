@@ -1,5 +1,4 @@
 import React from 'react';
-import ParticleEffect from "../Particle/ParticleEffect";
 import Type from './Type';
 
 const Home = () => {
@@ -8,7 +7,6 @@ const Home = () => {
             
             <div>
             
-            <ParticleEffect />
                 <h1>Hey there!</h1>
                 <h2>
                     I'm Danny, I study Web Development at The University Of Miami.

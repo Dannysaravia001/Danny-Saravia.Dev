@@ -50,7 +50,7 @@ p {
 }
 .nav-link {
   position: relative;
-  color: white !important; /* Set the text color */
+  color: white ; /* Set the text color */
 }
 
 .nav-link::before {
