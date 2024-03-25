@@ -8,7 +8,6 @@
 
 
 Welcome to My Portfolio!
-Link to deployed website here!
 
 I'm Danny Saravia, a web developer passionate about creating engaging and dynamic web experiences. My portfolio showcases my skills in web development, featuring a satisfying page layout and a vibrant display of CSS coloring and React functionality.
 
